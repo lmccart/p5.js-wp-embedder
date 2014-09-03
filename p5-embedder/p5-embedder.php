@@ -32,12 +32,14 @@ add_action( 'wp_print_scripts', 'enqueue_scripts' );
 add_action( 'wp_print_styles', 'enqueue_styles' );
 
 function enqueue_scripts() {
-  wp_enqueue_script( 'jquery', 'http://code.jquery.com/jquery-2.1.1.min.js');
-  wp_enqueue_script( 'helper', plugins_url( 'helper.js', __FILE__ ));
+  wp_enqueue_script( 'p5_jquery', 'http://code.jquery.com/jquery-2.1.1.min.js');
+  wp_enqueue_script( 'p5_helper', plugins_url( 'helper.js', __FILE__ ));
+  wp_enqueue_script( 'p5_prism', plugins_url( 'prism.js', __FILE__ ));
 }
 
 function enqueue_styles() {
-  wp_enqueue_style( 'style', plugins_url( 'style.css' , __FILE__ ));
+  wp_enqueue_style( 'p5_style', plugins_url( 'style.css' , __FILE__ ));
+  wp_enqueue_style( 'p5_prism_style', plugins_url( 'prism.css' , __FILE__ ));
 }
 
 
@@ -50,6 +52,7 @@ function build_sketch($content) {
   foreach ($sketches as $s) {
     $name = $s->nodeValue;
     $url = $s->getAttribute('href');
+    $s->setAttribute('class', 'p5_sketch_link');
 
     $code = file_get_contents($url);
 

@@ -17,6 +17,12 @@
     line-height: 1em;
 }
 
+.p5_sketch_link {
+  width: 100%;
+  float: left;
+}
+
 iframe {
   border: none;
+  float: left;
 }
