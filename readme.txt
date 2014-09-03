@@ -29,6 +29,9 @@ the data-height and data-width tags (you can specify one or both of these).
 use the tag data-nocode='true'.
 `<a href='#' data-nocode='true' class='p5-embed'>your_filename</a>`
 
+6. You can override the default font-size by adding data-fontsize=n, where n is the size
+of the font in pixels (for example, 10).
+
 ####Including media
 
 To include external files (for example, an image via loadImage) you will need to upload the files individually to wordpress and use the full blog url or the upload in the JS code.

@@ -45,7 +45,7 @@ function enqueue_styles() {
 
 function build_sketch($content) {
   $dom = new DOMDocument();
-  $dom->loadHTML($content);
+  $dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
   $xpath = new DOMXpath($dom);
   $sketches = $xpath->query('//a[@class="p5-embed"]');
 
@@ -86,7 +86,7 @@ function build_sketch($content) {
       $editor->setAttribute('style', 'line-height:'.$lineheight.'px !important');
     }
   }
-  return mb_convert_encoding($dom->saveHTML(), 'HTML-ENTITIES', 'UTF-8');
+  return $dom->saveHTML();
 }
 add_filter('the_content', build_sketch);
 
