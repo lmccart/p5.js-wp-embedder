@@ -26,7 +26,7 @@
 */
 
 defined('ABSPATH') or die("No script kiddies please!");
-
+libxml_use_internal_errors(true);
 
 add_action( 'wp_print_scripts', 'enqueue_scripts' );
 add_action( 'wp_print_styles', 'enqueue_styles' );
