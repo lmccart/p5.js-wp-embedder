@@ -63,7 +63,7 @@ function build_sketch($content) {
 
     $iframe = $dom->createElement('iframe');
     $iframe->setAttribute('src', plugins_url('p5_iframe.html', __FILE__));
-    $iframe->setAttribute('id', 'exampleFrame');
+    $iframe->setAttribute('class', 'p5_exampleFrame');
     $iframe->setAttribute('width', $w);
     $iframe->setAttribute('height', $h);
     $s->parentNode->appendChild($iframe);
@@ -73,8 +73,7 @@ function build_sketch($content) {
     $s->parentNode->appendChild($pre);
 
     $editor = $dom->createElement('code', $code);
-    $editor->setAttribute('id', 'editor');
-    $editor->setAttribute('class', 'language-javascript');
+    $editor->setAttribute('class', 'p5_editor language-javascript');
     $pre->appendChild($editor);
 
     if ($nocode == 'true') {
@@ -82,14 +81,12 @@ function build_sketch($content) {
     }
 
     if ($fontsize) {
-      echo $fontsize;
       $lineheight = $fontsize * 1.45;
       $pre->setAttribute('style', 'font-size:'.$fontsize.'px !important;');
       $editor->setAttribute('style', 'line-height:'.$lineheight.'px !important');
     }
   }
-
-  return $dom->saveHTML();
+  return mb_convert_encoding($dom->saveHTML(), 'HTML-ENTITIES', 'UTF-8');
 }
 add_filter('the_content', build_sketch);
 
