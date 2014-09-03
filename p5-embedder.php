@@ -82,8 +82,8 @@ function build_sketch($content) {
 
     if ($fontsize) {
       $lineheight = $fontsize * 1.45;
-      $pre->setAttribute('style', 'font-size:'.$fontsize.'px !important;');
-      $editor->setAttribute('style', 'line-height:'.$lineheight.'px !important');
+      $pre->setAttribute('style', 'font-size:'.$fontsize.'px !important; line-height:'.$lineheight.'px !important');
+      $editor->setAttribute('style', 'font-size:'.$fontsize.'px !important;');
     }
   }
   return $dom->saveHTML();
