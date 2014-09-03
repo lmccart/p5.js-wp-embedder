@@ -11,7 +11,7 @@ This plugin embeds a p5.js sketch into a wordpress blog.
 
 == Description ==
 
-To include a p5 sketch:
+####To include a p5 sketch:
 
 1. Upload the sketch.js file to Media Library.
 
@@ -29,6 +29,10 @@ the data-height and data-width tags (you can specify one or both of these).
 use the tag data-nocode='true'.
 `<a href='#' data-nocode='true' class='p5-embed'>your_filename</a>`
 
+####Including media
+
+To include external files (for example, an image via loadImage) you will need to upload the files individually to wordpress and use the full blog url or the upload in the JS code.
+  
 
 == Installation ==
 
