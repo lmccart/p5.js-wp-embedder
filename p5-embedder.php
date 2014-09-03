@@ -59,6 +59,7 @@ function build_sketch($content) {
     $w = $s->getAttribute('data-width');
     $h = $s->getAttribute('data-height');
     $nocode = $s->getAttribute('data-nocode');
+    $fontsize = $s->getAttribute('data-fontsize');
 
     $iframe = $dom->createElement('iframe');
     $iframe->setAttribute('src', plugins_url('p5_iframe.html', __FILE__));
@@ -78,6 +79,13 @@ function build_sketch($content) {
 
     if ($nocode == 'true') {
       $pre->setAttribute('style', 'display:none');
+    }
+
+    if ($fontsize) {
+      echo $fontsize;
+      $lineheight = $fontsize * 1.45;
+      $pre->setAttribute('style', 'font-size:'.$fontsize.'px !important;');
+      $editor->setAttribute('style', 'line-height:'.$lineheight.'px !important');
     }
   }
 
