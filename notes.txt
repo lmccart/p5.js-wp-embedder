@@ -1,0 +1,6 @@
+wp how to use svn: https://wordpress.org/plugins/about/svn/
+
+http://plugins.svn.wordpress.org/p5-embedder/
+
+
+
