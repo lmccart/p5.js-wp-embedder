@@ -1,2 +1,7 @@
 .DS_Store
 *.zip
+.svn/*
+assets/*
+trunk/*
+branches/*
+tags/*
