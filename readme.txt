@@ -7,7 +7,9 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin embeds a p5.js sketch into a wordpress blog.
+This plugin embeds a live running p5.js sketch into a WordPress blog. There are options to show or hide the associated code and to set the size of the sketch frame. You can see an example of it running [here](http://lauren-mccarthy.com/inmotion/2014/09/test-5/).
+
+[p5js.org](http://p5js.org): p5.js is a JavaScript library that starts with the original goal of Processing, to make coding accessible for artists, designers, educators, and beginners, and reinterprets this for today’s web.
 
 == Description ==
 
@@ -41,3 +43,6 @@ To include external files (for example, an image via loadImage) you will need to
 
 1. Choose 'Plugins', 'Add New', 'Upload', and upload p5-embedder.zip.
 2. Activate the plugin. See Description for instructions for use in posts.
+
+
+
