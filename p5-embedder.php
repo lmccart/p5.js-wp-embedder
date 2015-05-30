@@ -32,7 +32,7 @@ add_action( 'wp_print_scripts', 'enqueue_scripts' );
 add_action( 'wp_print_styles', 'enqueue_styles' );
 
 function enqueue_scripts() {
-  wp_enqueue_script( 'p5_jquery', 'http://code.jquery.com/jquery-2.1.1.min.js');
+  wp_enqueue_script( 'p5_jquery', '//code.jquery.com/jquery-2.1.1.min.js');
   wp_enqueue_script( 'p5_helper', plugins_url( 'helper.js', __FILE__ ));
   wp_enqueue_script( 'p5_prism', plugins_url( 'prism.js', __FILE__ ));
 }
