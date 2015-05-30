@@ -2,7 +2,7 @@
 Contributors: lmccart
 Tags: p5.js, p5, javascript, js, teaching, processing
 Requires at least: 3.0.1
-Tested up to: 3.4
+Tested up to: 4.2.2
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -45,4 +45,8 @@ To include external files (for example, an image via loadImage) you will need to
 2. Activate the plugin. See Description for instructions for use in posts.
 
 
+== Changelog ==
+
+= 0.1.1 =
+* Fixed jquery link to work for 0.4.
 
