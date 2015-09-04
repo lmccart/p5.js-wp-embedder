@@ -3,7 +3,7 @@ Contributors: lmccart
 Tags: p5.js, p5, javascript, js, teaching, processing
 Requires at least: 3.0.1
 Tested up to: 4.2.3
-Stable tag: 4.3
+Stable tag: 0.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,3 +54,6 @@ To include external files (for example, an image via loadImage) you will need to
 = 0.1.2 =
 * Fixed issue with wordpress 4.2.3 causing errors.
 
+
+= 0.1.3 =
+* Updated to v0.4.9 of p5.js
