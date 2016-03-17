@@ -1,3 +1,5 @@
+SUPPORT FOR THIS HAS BEEN DISCONTINUED, USE AT YOUR OWN RISK :)
+
 === p5.js Embedder ===
 Contributors: lmccart
 Tags: p5.js, p5, javascript, js, teaching, processing
